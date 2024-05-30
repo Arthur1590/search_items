@@ -1,0 +1,15 @@
+<svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1_68">
+			<rect id="bx:bxl-linkedin" width="28.000000" height="28.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="bx:bxl-linkedin" width="28.000000" height="28.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1_68)">
+		<path id="Vector" d="M8.36 5.84C8.36 7.25 7.22 8.39 5.81 8.39C4.4 8.39 3.26 7.25 3.26 5.84C3.26 4.43 4.4 3.29 5.81 3.29C7.22 3.29 8.36 4.43 8.36 5.84Z" fill="#B6CCDA" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M10.77 10.33L10.77 24.49L15.17 24.49L15.17 17.48C15.17 15.64 15.52 13.85 17.81 13.85C20.07 13.85 20.1 15.96 20.1 17.6L20.1 24.49L24.5 24.49L24.5 16.72C24.5 12.91 23.67 9.98 19.21 9.98C17.07 9.98 15.64 11.15 15.05 12.26L14.99 12.26L14.99 10.33L10.77 10.33ZM3.61 10.33L8.01 10.33L8.01 24.49L3.61 24.49L3.61 10.33Z" fill="#B6CCDA" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

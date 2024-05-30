@@ -1,0 +1,104 @@
+@import "../../scss/main.scss";
+
+.header {
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #b6ccda2f;
+  box-shadow: 0 0 15px 10px #0000001a;
+  backdrop-filter: blur(1rem);
+  z-index: 9999;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    &-item:hover ~ .line {
+      opacity: 1;
+    }
+    &-item:hover:nth-child(2) ~ .line {
+      transform: translateX(110%);
+    }
+    &-item:hover:nth-child(3) ~ .line {
+      transform: translateX(215%);
+    }
+    &-item:hover:nth-child(4) ~ .line {
+      transform: translateX(332%);
+    }
+
+    &-link {
+      display: block;
+      padding: 0.5rem 3rem;
+      font-weight: 500;
+      transition: 0.3s all;
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      &:hover {
+        color: $grayActive;
+      }
+    }
+
+    & .line {
+      transition: all 0.3s ease;
+      z-index: -1;
+      transform: translateX(0);
+      display: inline-block;
+      position: absolute;
+      border-radius: 100px;
+      height: 100%;
+      width: calc(100% / 4.5);
+      background: $whitePrimary;
+      opacity: 0;
+    }
+  }
+
+  & .controlls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    position: relative;
+    height: 5rem;
+
+    & button {
+      background: #b8b8b860;
+      padding: 0.8rem 0.8rem;
+      border-radius: 40px;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    & input {
+      font-weight: 400;
+      color: $whitePrimary;
+      font-size: clamp(1rem, 1.5vw, 1.5rem);
+      border-bottom: 0.2rem solid #fff;
+      transition: 0.3s all ease;
+      transform-origin: center right;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
+        color: $whitePrimary;
+      }
+      &.active {
+        width: 100%;
+      }
+    }
+
+    .util {
+      width: 0%;
+    }
+  }
+}

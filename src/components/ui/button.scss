@@ -1,0 +1,22 @@
+@import "../../scss/main.scss";
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-weight: 400;
+  color: #fff;
+  width: fit-content;
+  background: #b6ccda80;
+  backdrop-filter: blur(0.8rem);
+  box-shadow: 0 0 15px #0000006e;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  transition: 0.3s all ease;
+
+  &:hover {
+    background: #fff;
+    color: #679ec0c6;
+  }
+}

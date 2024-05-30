@@ -1,0 +1,31 @@
+@import "../../scss/main.scss";
+
+.footer {
+  margin-top: 5rem;
+  min-height: 5.5rem;
+  width: 100%;
+  background: #91adc3ae;
+
+  display: flex;
+  align-items: center;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h5 {
+    color: $whitePrimary;
+    font-weight: 600;
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
+  }
+
+  figure {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: #3b495a;
+    border-radius: 40px;
+    padding: 1rem;
+  }
+}

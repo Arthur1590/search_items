@@ -1,0 +1,70 @@
+@import "./fonts.scss";
+
+// ? colors
+$bg: #b6ccda;
+$whitePrimary: #ffffff;
+$grayActive: #b6ccda;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: "Poppins";
+    background: $bg;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    & :is(.phones__wrapper, .laptop__wrapper, .others__wrapper) {
+        margin-top: 9rem;
+    }
+}
+
+.header nav :where(a, li, ul) {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 832px) {
+    .header {
+        &__nav {
+            &-list {
+                overflow-x: scroll;
+            }
+            .line {
+                display: none;
+            }
+            &-link {
+                &:hover {
+                    color: $whitePrimary;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 584px) {
+}
